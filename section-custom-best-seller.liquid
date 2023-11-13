@@ -1,0 +1,206 @@
+
+{% stylesheet %}
+    
+    .section-custom-best-seller .flex-container {
+      display: flex;
+      height: 788px;
+      object-fit: contain;
+    }
+
+    .section-custom-best-seller .flex-box {
+      flex: 1;
+      width: 56.25vw;
+    }
+
+    .section-custom-best-seller .inner-flexbox-image {
+      height: 720px;
+
+    }
+
+    .section-custom-best-seller .inner-flexbox-image img {
+      height: 100%;
+      width: 100%;
+
+    }
+  
+    .section-custom-best-seller .inner-flexbox-contenu {
+      height: 68px;
+      object-fit: contain;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section-custom-best-seller .inner-flexbox-image>.centered-content {
+      text-align: center;
+      font-size: 32px;
+      line-height: 35.5px;
+      max-width: 372.5px;
+
+
+    }
+
+    .section-custom-best-seller .button-decouvrez {
+      position: absolute;
+      top: 650px;
+      left: 15px;
+      width: 100px; /* Ajoutez la largeur souhaitée lorsqu'il est survolé */
+      color: #fff;
+      background-color: rgba(255, 255, 255, .17);
+      border: 1px solid #fff;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      transition: border-color 0.3s;
+      box-sizing: border-box;
+
+    }
+    .section-custom-best-seller .button-decouvrez:hover {
+      border: 2px solid #fff;
+
+    }
+    
+    .section-custom-best-seller .cercle {
+      border: 1px solid #000;
+      border-radius: 20px;
+
+
+    }
+
+   
+    .section-custom-best-seller .div-element {
+      height: 7.3vh;
+      align-self: auto;
+      margin: 10px 16px;
+    }
+    
+    .section-custom-best-seller .section-1{
+      height: 3vh;
+      justify-content: space-between;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+
+    }
+    .section-custom-best-seller .section-2 {
+      height: 3vh;
+      justify-content: space-between;
+      display: flex;
+      align-items: center; /* Align items vertically in the center */
+      margin-top: 15px;
+
+    }
+
+    .section-custom-best-seller .div-button {
+      font-size: 0;
+
+
+    }
+
+     .section-custom-best-seller .link-block {
+      padding-left: 5px; 
+    }
+    
+    @media screen and (max-width: 600px) {
+      .section-custom-best-seller .flex-container {
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        
+      }
+      .section-custom-best-seller .flex-box {
+        width: 100%;
+      }
+    
+    }
+{% endstylesheet %}
+
+
+  <div class="section-custom-best-seller">
+
+    <div class="flex-container">
+      <div class="flex-box">
+        <div class="inner-flexbox-image">
+          <div style="position: relative; ">
+            <a href="#" class="button-decouvrez">Decouvrez</a>
+          </div>
+          <img src="{{ section.settings.image_1 | img_url: 'master' }}" alt="Image 1">
+
+        </div>
+        <div class="inner-flexbox-contenu">
+          
+          <div class="div-element">
+            
+          <section class="section-1">
+            <div>a</div>
+            <div>b</div>
+          </section>
+          
+          <section class="section-2">
+            <div>S M L XL</div>
+            <div class="div-button">
+              <a href="#" class="link-block">
+                <img src="{{ section.settings.image_2| img_url: 'master' }}" alt="" loading="lazy" style="background-color:red;" width="12" height="12" alt="" class="cercle" >
+              </a><a href="#" class="link-block">
+                <img src="{{ section.settings.image_2| img_url: 'master' }}" alt="" loading="lazy" style="background-color:red;" width="12" height="12" alt="" class="cercle" >
+              </a>
+              
+            </div>
+      
+          </section>
+
+
+          </div>
+
+
+          
+        </div>
+      </div>
+
+      <div class="flex-box">
+        <div class="inner-flexbox-image" style="background-color: #f5f2ec;      display: flex;
+          align-items: center;
+          justify-content: center;
+">
+          <div class="centered-content">
+            Notre best-seller L’ensemble Lila
+          </div>
+
+        </div>
+        <div class="inner-flexbox-contenu">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% schema %}
+  {
+    "name": "best-seller",
+    "settings": [
+
+          {
+      "type": "image_picker",
+      "label": "Image 1",
+      "id": "image_1",
+      "info": "Choose the first image."
+    },
+    {
+      "type": "image_picker",
+      "label": "Image 2",
+      "id": "image_2",
+      "info": "Choose the second image."
+    }
+    ],
+      "presets": [
+    {
+      "name": "best-seller"
+    
+    
+    }
+  ]
+  }
+{% endschema %}
+
+{% javascript %}
+{% endjavascript %}
