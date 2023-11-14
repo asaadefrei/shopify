@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+
+
+
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      .section-custom-pas-un-pli .main-flexbox {
+        display: flex;
+        height: 688px;
+        object-fit: contain;
+
+
+      }
+
+      .section-custom-pas-un-pli .sub-flexbox {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        object-fit: contain;
+
+      }
+
+      .section-custom-pas-un-pli .sub-flexbox-image {
+        height: 600px;
+        object-fit: contain;
+
+      }
+
+      .section-custom-pas-un-pli .sub-flexbox-image img {
+        height: 100%;
+        width: 100%;
+
+      }
+
+
+      .section-custom-pas-un-pli .sub-flexbox-image>.centered-content {
+        text-align: center;
+        font-size: 32px;
+        line-height: 35.5px;
+        padding-right: 10%;
+        padding-left: 10%;
+
+      }
+
+      .section-custom-pas-un-pli .button-decouvrez {
+        position: absolute;
+        top: 540px;
+        left: 15px;
+        width: 100px;
+        /* Ajoutez la largeur souhaitée lorsqu'il est survolé */
+        color: #fff;
+        background-color: rgba(255, 255, 255, .17);
+        border: 1px solid #fff;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        transition: border-color 0.3s;
+        box-sizing: border-box;
+        text-decoration: none;
+        /* Enlève le soulignement */
+
+      }
+
+      .section-custom-pas-un-pli .button-decouvrez:hover {
+        border: 2px solid #fff;
+
+      }
+
+      .section-custom-pas-un-pli .sub-flexbox-item {
+        height: 88px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+      }
+
+
+
+      .section-custom-pas-un-pli .sub-flexbox-item .div-element {
+        height: 7.3vh;
+       
+        margin: 18px 24px;
+       
+
+      }
+
+      .section-custom-pas-un-pli .section-1 {
+        height: 3vh;
+        justify-content: space-between;
+        display: flex;
+        padding-bottom: 20px;
+
+      }
+
+      .section-custom-pas-un-pli .section-2 {
+        height: 3vh;
+        justify-content: space-between;
+        display: flex;
+
+      }
+
+      .section-custom-pas-un-pli .div-button {
+        font-size: 0;
+      }
+
+      .section-custom-pas-un-pli .link-block {
+        padding-left: 5px;
+      }
+
+      .section-custom-pas-un-pli .cercle {
+        border: 1px solid #000;
+        border-radius: 20px;
+
+
+      }
+
+
+
+      @media screen and (max-width: 600px) {
+        .section-custom-pas-un-pli .main-flexbox {
+          flex-direction: column;
+          align-items: flex-start;
+          display: flex;
+          height: auto;
+
+        }
+
+        .section-custom-pas-un-pli .sub-flexbox {
+          width: 100%;
+        }
+
+      }
+    </style>
+
+    <title>Flexbox Example</title>
+  </head>
+
+  <body>
+
+
+    <div class="section-custom-pas-un-pli">
+      <div class="main-flexbox">
+        <div class="sub-flexbox">
+          <div class="sub-flexbox-image">
+
+
+            <div style="position: relative; ">
+              <a href="#" class="button-decouvrez">Decouvrez</a>
+            </div>
+
+
+            <img src="image1.webp">
+
+
+          </div>
+          <div class="sub-flexbox-item">
+
+            <div class="div-element">
+
+              <section class="section-1">
+                <div>a</div>
+                <div>b</div>
+              </section>
+
+              <section class="section-2">
+                <div>S M L XL</div>
+                <div class="div-button">
+                  <a href="#" class="link-block">
+                    <img src="cercle.png" loading="lazy" style="background-color:red;" width="12" height="12" alt=""
+                      class="cercle" />
+                  </a><a href="#" class="link-block">
+                    <img src="cercle.png" loading="lazy" style="background-color:red;" width="12" height="12" alt=""
+                      class="cercle" />
+                  </a>
+
+                </div>
+
+              </section>
+
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="sub-flexbox">
+          <div class="sub-flexbox-image" style="background-color: #f5f2ec;   display: flex;
+            align-items: center;
+            justify-content: center;">
+            <div class="centered-content">
+              Pas un Pli, Des Ensembles plissés qui soulignent sans dévoiler. </div>
+          </div>
+          <div class="sub-flexbox-item"></div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="sub-flexbox">
+          <div class="sub-flexbox-image">
+            <div style="position: relative; ">
+              <a href="#" class="button-decouvrez">Decouvrez</a>
+            </div>
+
+
+
+
+            <img src="image2.webp">
+
+
+
+          </div>
+          <div class="sub-flexbox-item">
+
+
+            <div class="div-element">
+
+              <section class="section-1">
+                <div>a</div>
+                <div>b</div>
+              </section>
+
+              <section class="section-2">
+                <div>S M L XL</div>
+                <div class="div-button">
+                  <a href="#" class="link-block">
+                    <img src="cercle.png" loading="lazy" style="background-color:red;" width="12" height="12" alt=""
+                      class="cercle" />
+                  </a><a href="#" class="link-block">
+                    <img src="cercle.png" loading="lazy" style="background-color:red;" width="12" height="12" alt=""
+                      class="cercle" />
+                  </a>
+
+                </div>
+
+              </section>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
